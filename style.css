@@ -1,0 +1,119 @@
+body {
+  font-family: "Asap";
+  background-color: #eedede;
+}
+
+.header-container {
+  background-color: rgb(48, 48, 48);
+  min-height: 100px;
+  margin-bottom: 40px;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  width: 100%;
+}
+.header-container header {
+  max-width: 1024px;
+  min-height: 100px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header-container header .logo p {
+  font-size: 1.1rem;
+}
+.header-container header nav {
+  display: flex;
+}
+.header-container header nav a {
+  padding: 10px 30px;
+  margin-left: 25px;
+  border: 1px solid white;
+  text-transform: uppercase;
+  font-size: 1.1rem;
+}
+
+.container {
+  min-height: 500px;
+  max-width: 1024px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.col {
+  background-color: rgb(16, 214, 122);
+  min-height: 200px;
+  width: 30%;
+  margin-bottom: 40px;
+}
+.col img {
+  width: 100%;
+  height: auto;
+}
+.col p {
+  padding: 20px 25px;
+}
+
+p {
+  color: white;
+  font-size: 0.875rem;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.highlight {
+  font-weight: 700;
+}
+
+.mob-wrap {
+  display: none;
+}
+.mob-wrap .burger-menu {
+  width: 40px;
+}
+
+@media (max-width: 768px) {
+  .header-container {
+    margin-bottom: 0;
+  }
+  .header-container header {
+    padding: 0 20px;
+  }
+  .header-container header nav {
+    display: none;
+  }
+  .header-container header .mob-wrap {
+    display: block;
+  }
+  .header-container header .mob-wrap .burger-menu {
+    color: white;
+  }
+  .header-container header .mob-wrap .mob-nav {
+    background-color: rgba(19, 18, 18, 0.954);
+    margin-left: calc(-70vw + 60px);
+    margin-top: 26px;
+    width: 70vw;
+    height: 100vh;
+    display: none;
+    position: absolute;
+  }
+  .header-container header .mob-wrap .mob-nav a {
+    text-align: center;
+    display: block;
+    padding: 30px 50px;
+    font-size: 1.2rem;
+  }
+  .header-container header .mob-wrap .mob-nav hr {
+    margin: 0 15px;
+  }
+  .col {
+    width: 100%;
+    margin-bottom: 0;
+  }
+}/*# sourceMappingURL=style.css.map */
